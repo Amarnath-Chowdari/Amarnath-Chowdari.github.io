@@ -134,6 +134,15 @@
     -webkit-background-clip:text; -webkit-text-fill-color:transparent;
     animation: fadeUp 0.8s 0.15s ease both;
   }
+  .hero-greet {
+	  font-size: clamp(0.8rem, 2vw, 1rem);
+	  letter-spacing: 6px;
+	  text-transform: uppercase;
+	  color: var(--muted);
+	  margin-bottom: 1rem;
+	  display: block;
+	  animation: fadeUp 0.8s ease both;
+	}
   .hero-role {
     margin-top:1.2rem; font-size:clamp(0.9rem,2vw,1.1rem);
     color:var(--muted); letter-spacing:1px;
@@ -219,6 +228,14 @@
     font-family:'Syne',sans-serif; font-weight:800; font-size:2.2rem;
     color:var(--accent); line-height:1;
   }
+	.stat-award {
+	  font-family: 'Syne', sans-serif;
+	  font-weight: 800;
+	  font-size: 2.2rem;
+	  color: var(--accent);
+	  line-height: 1;
+	  letter-spacing: 1px;
+	}
   .stat-label { font-size:0.72rem; color:var(--muted); margin-top:0.4rem; letter-spacing:1px; }
 
   /* 3D cube container */
@@ -469,12 +486,13 @@
   <canvas id="hero-canvas"></canvas>
   <div class="hero-content">
     <div class="hero-badge">✦ Available for Opportunities</div>
+	<span class="hero-greet">Welcome to</span>
     <h1 class="hero-name">Amarnath<br/>Chowdari</h1>
     <p class="hero-role">
       <span id="typed" class="typed"></span><span style="color:var(--accent);animation:pulse 1s infinite">|</span>
     </p>
     <p class="hero-desc">
-      Senior Software Engineer crafting scalable enterprise systems with .NET, Azure & Microservices.
+      Full Stack Software Engineer crafting scalable enterprise systems with .NET, Azure & Microservices.
       4+ years turning complex business problems into elegant code.
     </p>
     <div class="hero-cta">
@@ -495,7 +513,7 @@
     <h2 class="section-title reveal">Crafting Software<br/>That Scales.</h2>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>I'm a <strong style="color:var(--accent)">Senior Software Engineer</strong> at Capgemini India, Hyderabad, specializing in enterprise-grade .NET full-stack development. My work focuses on building high-performance APIs, cloud-enabled architectures, and seamless integrations.</p>
+        <p>I'm a <strong style="color:var(--accent)">.NET Full Stack Developer</strong> at Capgemini India, Hyderabad, specializing in enterprise-grade .NET full-stack development. My work focuses on building high-performance APIs, cloud-enabled architectures, and seamless integrations.</p>
         <p>From migrating legacy .NET Framework codebases to modern .NET Core 8, to engineering automated SQL workflows and CI/CD pipelines — I thrive at the intersection of <strong style="color:var(--accent2)">performance</strong>, <strong style="color:var(--accent3)">reliability</strong>, and clean architecture.</p>
         <p>Beyond code, I mentor junior developers, lead sprint planning, and own full application lifecycles with zero escalations.</p>
         <div class="about-stats">
@@ -512,8 +530,8 @@
             <div class="stat-label">Enterprise Projects</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num" data-target="0">0</div>
-            <div class="stat-label" style="font-size:0.65rem">Escalations in Q4 2024</div>
+            <div class="stat-award">Mr.COOL</div>
+            <div class="stat-label" style="font-size:0.65rem">Award in Q4 2024</div>
           </div>
         </div>
       </div>
